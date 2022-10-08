@@ -8,6 +8,11 @@ const ExpenseForm = () => {
  const costRef = useRef()  
 
  function submit() {
+    if(isNaN(costRef.current.value))
+    {
+      alert('enter number')
+      return ;
+    }
     
   dispatch(addExpense({name:nameRef.current.value,cost:costRef.current.value}))
 
