@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "./src/index.js",
   "license": "ISC",
+  "homepage": "https://imad3100.github.io/Reactjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server .",
-    "build": "Webpack ."
+    "build": "Webpack .",
+    "predeploy":"npm run build" ,
+    "deploy": "gh-pages -d build"
+
   },
-  "dependencies": { 
+  "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -35,6 +39,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.7.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
