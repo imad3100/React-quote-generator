@@ -20,3 +20,7 @@ body{
     top: -25px;
     left: 50px;
   }
+    .bolder-font {
+      font-weight: 100;
+    }
+  
